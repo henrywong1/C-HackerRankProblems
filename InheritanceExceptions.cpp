@@ -5,14 +5,14 @@
 using namespace std;
 
 /* Define the exception here */
-class BadLengthException: public exception{
+class BadLengthException: public exception {
 private:
     int n = 0;
 public:
-    BadLengthException(int x){
+    BadLengthException(int x) {
         n = x;
     }
-    int what(){
+    int what() {
         return n;
     }
 };
